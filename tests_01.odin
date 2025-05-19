@@ -17,15 +17,15 @@ main :: proc() {
 
     print(maxDepth(root))
 
-	free_all(context.temp_allocator)
-	// OUTPUT:
-	// 3
+    free_all(context.temp_allocator)
+    // OUTPUT:
+    // 3
 }
 
 TreeNode :: struct {
-	value: int,
-	left: ^TreeNode,
-	right: ^TreeNode,
+    value: int,
+    left: ^TreeNode,
+    right: ^TreeNode,
 }
 
 maxDepth :: proc(root: ^TreeNode) -> int {
